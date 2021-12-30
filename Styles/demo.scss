@@ -45,6 +45,17 @@ footer{
     font-size: $para-fontSize;
 }
 
+@mixin benefit-style ($size, $color) {
+    font-size: $size;
+    text-align: justify;
+    color: $color;
+}
+.benefit {
+    @include benefit-style(20px, black);
+}
+#special{
+    @include benefit-style (18px, blue);
+}
 .align{
     text-align: $centerAlign;
 }

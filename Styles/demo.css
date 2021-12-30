@@ -47,7 +47,19 @@ footer {
 }
 
 #about {
+  font-size: 18px;
+}
+
+.benefit {
   font-size: 20px;
+  text-align: justify;
+  color: black;
+}
+
+#special {
+  font-size: 18px;
+  text-align: justify;
+  color: blue;
 }
 
 .align {
