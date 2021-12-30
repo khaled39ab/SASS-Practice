@@ -1,16 +1,5 @@
-//variable declaration 
-$header-bgColor : cyan;
-$main-bgColor : #6e6868;
-$footer-bgColor : #f25a61;
-$nav-bgColor : #97aff7;
-$para-fontSize : 20px;
-$centerAlign : center;
-
-*{
-    margin: 2px;
-    padding: 5px;
-    box-sizing: border-box;
-}
+@import "variables";
+@import "reset";
 
 header {
     background-color: $header-bgColor;
@@ -20,6 +9,7 @@ header {
 nav{
     margin-top: 20px;
     background-color: $nav-bgColor;
+    text-align: right;
 
     ul{
         list-style-type: none;
@@ -33,11 +23,11 @@ nav{
                 display: inline-block;
                 color: floralwhite;
                 padding: 10px;
-                transition: 1s;
+                transition: 2s;
                 border-radius: 5px;
             }
             a:hover {
-                background : black;
+                background : #ff0000;
             }
         }
     }

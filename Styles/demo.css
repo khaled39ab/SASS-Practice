@@ -12,6 +12,7 @@ header {
 nav {
   margin-top: 20px;
   background-color: #97aff7;
+  text-align: right;
 }
 
 nav ul {
@@ -28,13 +29,13 @@ nav ul li a {
   display: inline-block;
   color: floralwhite;
   padding: 10px;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 2s;
+  transition: 2s;
   border-radius: 5px;
 }
 
 nav ul li a:hover {
-  background: black;
+  background: #ff0000;
 }
 
 main {
