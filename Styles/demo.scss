@@ -1,0 +1,60 @@
+//variable declaration 
+$header-bgColor : cyan;
+$main-bgColor : #6e6868;
+$footer-bgColor : #f25a61;
+$nav-bgColor : #97aff7;
+$para-fontSize : 20px;
+$centerAlign : center;
+
+*{
+    margin: 2px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: $header-bgColor;
+}
+
+//nav styling by sass nesting
+nav{
+    margin-top: 20px;
+    background-color: $nav-bgColor;
+
+    ul{
+        list-style-type: none;
+
+        li{
+            display: inline;
+            margin: 0 15px;
+
+            a{
+                text-decoration: none;
+                display: inline-block;
+                color: floralwhite;
+                padding: 10px;
+                transition: 1s;
+                border-radius: 5px;
+            }
+            a:hover {
+                background : black;
+            }
+        }
+    }
+}
+
+main{
+    background-color: $main-bgColor;
+}
+
+footer{
+    background-color: $footer-bgColor;
+}
+
+#about {
+    font-size: $para-fontSize;
+}
+
+.align{
+    text-align: $centerAlign;
+}
