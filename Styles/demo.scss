@@ -25,6 +25,8 @@ nav{
                 padding: 10px;
                 transition: 2s;
                 border-radius: 5px;
+
+                @include setFontSize(large);
             }
             a:hover {
                 background : #ff0000;
@@ -46,7 +48,7 @@ footer{
 }
 
 @mixin benefit-style ($size, $color) {
-    font-size: $size;
+    // font-size: $size;
     text-align: justify;
     color: $color;
 }
@@ -65,7 +67,7 @@ footer{
     text-align: center;
     padding: 10px 20px;
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
     cursor: pointer;
 }
 .btn-download{
@@ -75,4 +77,20 @@ footer{
 .btn-learn{
     @extend .btn;
     background-color: red;
+}
+
+//if else
+@mixin setFontSize ($value){
+    @if $value == small{
+        font-size: 12px;
+    }
+    @else if $value == medium{
+        font-size: 16px;
+    }
+    @else if $value == large{
+        font-size: 50px;
+    }
+    @else{
+        font-size: none;
+    }
 }
