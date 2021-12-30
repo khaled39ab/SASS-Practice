@@ -65,4 +65,21 @@ footer {
 .align {
   text-align: center;
 }
+
+.btn, .btn-download, .btn-learn {
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px 20px;
+  font-style: italic;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn-download {
+  background-color: green;
+}
+
+.btn-learn {
+  background-color: red;
+}
 /*# sourceMappingURL=demo.css.map */
